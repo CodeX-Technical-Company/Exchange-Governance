@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="er">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects List</title>
+    <link rel="stylesheet" href="../css/master.css">
+</head>
+<body>
+   <main>
+    <!-- start landing page -->
+    <!-- start the nav bar -->
+    <div class="navbar">
+        <a href="projList.html" class="logo">resg</a>
+        <div class="links">
+            <a href="#">المتبرعين</a>
+            <a href="associationW.html">الجمعيات</a>
+            <a href="#">المشاريع</a>
+            <div class="dropdown">
+                <a href="#">ايرادات المشروع</a>
+                <div class="dropdown-content">
+                    <a href="projectRevenueW.html">ايرادات</a>
+                    <a href="projectConjugationsW.html">صرفيات</a>
+                </div>
+            </div>
+        </div>
+    </div>
+         <!-- to blur all body content except popup box -->
+         <div class="blur"></div>
+         <!-- Projects secton  -->
+         <div id="Projects" class="projectsContainer container">
+             <div class="Header">
+                 <h2>قائمة المشاريع</h2>
+             </div>
+             <div class="projInputBox inputBox">
+                 <form action="insertNewProject.php" method="POST" id="projectsForm" >
+                         <div id="formColser"></div>
+                         <label for="projectName">الاسم</label>
+                         <input type="name" name="name" id="projectName" placeholder="اكتب اسم المشروع" required>
+                         <label for="workState"> حالة العمل</label>
+                         <input type="text" name="workState" id="workState" placeholder=" اكتب حالة العمل" required>
+                         <input type="submit" value="أضافة">
+                 </form>
+             </div>
+             <div class="projContainer productsContainer">
+                
+             </div>
+             <div class="addNewProj addNew">
+                 <button>أضافة مشروع جديد</button>
+             </div>
+         </div>
+         <footer>
+            <p>جميع الحقوق &copy; محفوظة 2023 <a href="tel:+967772044302">انقر هنا</a></p>
+            <p>اذا لديك اي افتراحات <a href="tel:+734101231">تواصل معنا</a></p>
+        </footer>
+        </main>
+        <script src="../js/projEHandler.js"></script>
+    </body>
+</html>

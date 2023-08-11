@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="er">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Associations List</title>
+    <link rel="stylesheet" href="../css/master.css">
+</head>
+
+<body>
+    <main>
+        <!-- start landing page -->
+        <!-- start the nav bar -->
+        <div class="navbar">
+            <a href="projList.html" class="logo">resg</a>
+            <div class="links">
+                <a href="#">المتبرعين</a>
+                <a href="#Associations">الجمعيات</a>
+                <a href="projectW.html">المشاريع</a>
+                <div class="dropdown">
+                    <a href="#">ايرادات المشروع</a>
+                    <div class="dropdown-content">
+                        <a href="projectRevenueW.html">ايرادات</a>
+                        <a href="projectConjugationsW.html">صرفيات</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- to blur all body content except popup box -->
+        <div class="blur"></div>
+        <!-- Associations section  -->
+        <div id="Associations" class="assoContainer container">
+            <div class="Header">
+                <h2>قائمة الجمعيات</h2>
+            </div>
+            <div class="AssoInputBox inputBox">
+                <form action="insertNewAsso.php" method="POST" id="AssoForm">
+                    <div id="formColser"></div>
+                    <label for="AssoName">الاسم</label>
+                    <input type="text" name="name" id="AssoName" placeholder="اكتب اسم الجمعية" required>
+                    <label for="joinedAsso">انضمام</label>
+                    <input id="joinedAsso" name="state" type="checkbox" class="sendAsso" >
+                    <input type="submit" value="اضافة">
+                </form>
+            </div>
+            <div class="proContainer"></div>
+            <div class="addNewAsso addNew">
+                <button>أضافة جمعية</button>
+            </div>
+        </div>
+        <footer>
+            <p>جميع الحقوق &copy; محفوظة 2023 <a href="tel:+967772044302">انقر هنا</a></p>
+            <p>اذا لديك اي افتراحات <a href="tel:+734101231">تواصل معنا</a></p>
+        </footer>
+    </main>
+    <script src="../js/associationEHandler.js"></script>
+</body>
+
+</html>
